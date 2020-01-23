@@ -1,5 +1,8 @@
+"""
 Instructions:
-"""Output the lyrics to 'The Twelve Days of Christmas'."""
+
+Output the lyrics to 'The Twelve Days of Christmas'.
+"""
 
 def recite(start_verse, end_verse):
     items_list = ["twelve Drummers Drumming, ", "eleven Pipers Piping, ", "ten Lords-a-Leaping, ",
