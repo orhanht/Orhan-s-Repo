@@ -72,14 +72,14 @@ ax.legend(loc="lower right", frameon=False, fontsize=14)
 plt.show()
 
 
- def deadw(m):
-     """Computes deadweight loss for market m"""
-     # Generate a market without taxes
-     m_no_tax = Market(m.ad, m.bd, m.az, m.bz, 0)
-     # Compare surplus, return the difference
-     surp1 = m_no_tax.consumer_surplus() + m_no_tax.producer_surplus()
-     surp2 = m.consumer_surplus() + m.producer_surplus() + m.taxrev()
-     return surp1 - surp2
+def deadw(m):
+    """Computes deadweight loss for market m"""
+    # Generate a market without taxes
+    m_no_tax = Market(m.ad, m.bd, m.az, m.bz, 0)
+    # Compare surplus, return the difference
+    surp1 = m_no_tax.consumer_surplus() + m_no_tax.producer_surplus()
+    surp2 = m.consumer_surplus() + m.producer_surplus() + m.taxrev()
+    return surp1 - surp2
 
 
 print(deadw(m))    # Show deadweight loss
