@@ -2,7 +2,7 @@ import numpy as np
 
 
 # Approximation of pi using Monte Carlo
-# We could use numba.njit to make it much faster
+# We could use numba.njit to make it much faster (@njit(parallel=True) and prange instead of range)
 def approximate_pi(n):
     number_of_coordinates_in = 0
     for i in range(n):
